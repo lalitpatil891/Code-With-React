@@ -1,0 +1,82 @@
+  what is React js?
+        React is a front end js library which is used to create single page applications and progressive web apps(eg:web whatsapp)
+  --> React Js is created and maintained by "meta". it is initially started in 2010 as internal language and later got open sourced in 2013.
+
+ why React?
+   React is easy to learn and easy to customise using other libraries
+  popular companies such as airbnb,netflix etc.., uses react
+  React uses JSX structure for building components
+  React is a open source and works with both JS and TS
+
+React vs React Native:
+     React is used for web applications or websites and React Native is used for mobile applications
+
+React vs angular:
+  i. React follows functional programming mostly after react 16 and angular follows OOP
+ ii. React is a library and angular is a framework.
+ iii. library is a pre written code used for specific purpose but framework provides complete developer enviroment
+ iv. both uses components but react does one way data binding and angular uses two way data binding
+
+  Installation:
+  step 1: Download & Install VSCode
+  step 2: Download & Install nodeJS
+       To install or uninstall any library/package, we need a package manager. nodeJS contain npm(node package manager)
+     after installation, goto cmd --> node -v
+   also verify "npm -v"
+  to Update older versions npm install nodejs@latest
+
+  
+create first React App:
+  Open VS code --> open a folder
+  goto extensions --> install "ES7 React/Redux/GraphQL/React-Native snippets" 
+by rodrigovallades
+Goto terminal --> new terminal --> command prompt and type "npm create vite@latest"
+give foldername
+select y and then react and then "javascript"
+once bundle is installed , follow below instructions
+     --> cd foldername
+     --> npm install
+     --> npm run dev
+goto folder --> src ---> app.jsx -->
+ remove only html from return and add your own HTML
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+Folder Structure:
+Vite Bundler installs basic react app by command "npm create vite@latest". it contains folder structure like:
+
+   1. vite.config.js -- it is the meta data / rule set of vite bundler
+   2. readme.md -- it is a instruction file to next developers
+   3. package.json -- it is the meta data of project
+   4. package-lock.json -- it is the meta data of package.json
+   5. index.html -- This is the main HTML file 
+   6. eslint.config -- EsLint is a library used for error findings
+       vite installs this by default. this file contains rulesets
+       of eslint
+  7. .gitingore -- it contains list of files git should ignore
+  8. node modules -- it contains all the packages installed
+  9. public -- it contains all the resources needed for public access
+  10. src -- It contains actual source files of project
+
+
+
+
+
+
+
+
+
+
+
+
+   
