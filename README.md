@@ -15,7 +15,7 @@ A collection of my **React.js** practice projects, learning experiments, and han
 
 ## **🛠 Tech Stack**  
 - ⚡ **React.js** (with Vite)  
-- 🎨 **CSS  <!-- /SCSS & Tailwind**  --> 
+- 🎨 **CSS**  <!-- /SCSS & Tailwind**  --> 
 - 🌍 **React Router**  
 - 🔗 **Axios / Fetch API**  
 
