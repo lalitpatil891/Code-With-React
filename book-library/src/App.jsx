@@ -6,7 +6,7 @@ function App ()
     <>
       <h2>Book Library</h2>
 			<BookLine />
-			<BookLine />
+			
 		</>
 	)
 }
