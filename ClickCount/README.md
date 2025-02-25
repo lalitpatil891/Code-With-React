@@ -1,8 +1,36 @@
-# React + Vite
+# ClickCount
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive counter app built using React. Tap to increase or decrease the count, and reset it anytime with a single click!
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Increment & Decrement**: Click `+` to increase and `-` to decrease the count.
+- **Reset Functionality**: Click the reset button to set the count back to zero.
+- **Minimal & Stylish UI**: Dark-themed design with smooth button interactions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies Used
+- **React**: Component-based UI development.
+- **CSS**: Custom styling for an enhanced user experience.
+
+## 📸 Preview
+![ClickCount Preview](./image.png)
+
+## 📂 Installation & Usage
+```sh
+# Clone the repository
+git clone https://github.com/lalitpatil891/Code-With-React.git
+
+# Navigate to the project directory
+cd ClickCount
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
+
+## 🔗 Live Demo
+[ClickCount Live](https://clickcountbylp.netlify.app)
+
+## 🏆 Author
+Developed with ❤️ by [Lalit Patil](https://github.com/lalitpatil891)
