@@ -15,7 +15,7 @@ A collection of my **React.js** practice projects, learning experiments, and han
 
 ## **🛠 Tech Stack**  
 - ⚡ **React.js** (with Vite)  
-- 🎨 **CSS**  <!-- /SCSS & Tailwind**  --> 
+- 🎨 **CSS**  <!-- /SCSS & Tailwind**  -->
 - 🌍 **React Router**  
 - 🔗 **Axios / Fetch API**  
 
@@ -42,4 +42,3 @@ A collection of my **React.js** practice projects, learning experiments, and han
 
 ## **📢 Why This Repo?**  
 This repository is my personal **React learning playground** where I improve my **frontend development skills** and build reusable components for future projects. Contributions and suggestions are always welcome! 🚀  
-
