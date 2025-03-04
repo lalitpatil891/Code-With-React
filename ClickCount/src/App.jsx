@@ -10,7 +10,7 @@ export default function App() {
       <div className="main-container">
         <img className='background-glow' src="/grid.png" alt="" />
         <img className='background-glow' src="/1-shadow.png" alt="" />
-
+        
         <div className='middle-container'>
 
           <h2>ClickCount</h2>
