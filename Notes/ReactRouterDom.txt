@@ -1,0 +1,18 @@
+React-Router-Dom
+================
+Step 1: start a react application and install react router dom.
+
+    npm install react-router-dom
+-----
+Step 2: Create some pages as functional components manually.
+-----
+Step 3: routing is provided to whole application by BrowserRouter,  so wrap the with BrowserRouter
+-----
+Step 4: Routes are provides within Routes component and Each Route will be within Route component.
+        These two components are provided by react router DOM. Each Route can be specified with path and component.
+-----
+Step 5: anchor tag will make page reload which is not prefereble by react so, react-router provides an element called Link.
+-----
+Step 6: child routing is possible with react router dom. we need to mention child routes inside the parent route.
+-----
+Step 7: we can navigate to specific path by programing also using useNavigate
