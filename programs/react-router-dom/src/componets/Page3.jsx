@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Page3() {
   return (
-    <div className='nav'>
+    <div className='navbar'>
      <Link to="/"><button>Back to page</button></Link>
       <h1>Hi... I am Page3</h1>
     </div>

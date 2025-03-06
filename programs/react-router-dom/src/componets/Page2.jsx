@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Page2() {
   return (
-    <div className='nav'>
+    <div className='navbar'>
      <Link to="/"><button>Back to page</button></Link>
       <h1>Hi... I am Page2</h1>
     </div>
