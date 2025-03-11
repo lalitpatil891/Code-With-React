@@ -177,7 +177,7 @@ h2 {
   /*--- Movie Details box ---*/
 
   .movie-details-flex {
-    border: 3px dashed #fff;
+    /* border: 3px dashed #fff; */
     width: fit-content;
     margin: 15px auto;
     padding: 20px;
@@ -451,33 +451,35 @@ h2 {
   /*--- Movie Details box ---*/
 
   .movie-details-flex {
-    border: 3px dashed #fff;
-    width: fit-content;
-    margin: 15px auto;
-    padding: 20px;
+    /* border: 3px dashed #fff; */
+    width: 100%;
+    margin: 10px auto;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 12px;
     margin-bottom: 150px;
 
   }
 
   .vertical-line {
 
-    width: 300px;
-    height: 2px;
+    width: 100%;
+    padding: 0px 10px;
+    height: 1.5px;
     color: #fff;
     background-color: #fff;
+    border-radius: 12px;
 
   }
 
   .text-details {
     color: #fff;
-    line-height: 40px;
-    font-size: large;
+    line-height: auto;
+    font-size: 16px;
     text-align: center;
   }
 
@@ -485,7 +487,7 @@ h2 {
     color: #fff;
     text-align: left;
     font-size: xx-large;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     text-align: center;
   }
 
