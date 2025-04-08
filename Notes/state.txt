@@ -1,0 +1,16 @@
+Every Time a change happens in react app, it create virtual DOM to compare with previous virtual DOM and will update only the changed part to the actual DOM. This is called 'rendering'
+Every re-render of app is called 'state'
+  
+  -- class components default state object
+  -- functional components don't have default state so called as stateless components but react 16 introduces hooks.
+  functional components can use a hook 'useState' to update and render a value
+
+ i. useState:
+     useState is the hook of fundamental way to manage state in react functional components
+     useState returns an array of a state value and a function to update state and it accepts initial value
+     const [value,setValue]= useState(initialValue)
+
+
+
+
+ 

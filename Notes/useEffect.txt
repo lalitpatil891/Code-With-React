@@ -1,0 +1,32 @@
+useEffect: 
+ 
+ In React, a side effect is an operation that affects the other components. it is used to handle tasks like 
+   making API calls,
+   setting timers,
+   updating the DOM,
+   handleing events/user interactions
+some side effects are synchronous (block the rendering of components, executes one after other) and some are asynchronous (they will get executed after a time)
+
+React uses a hook called useEffect to handle sideEffects.
+syntax: useEffect(callback fn,[dependencies])
+i. if there is no dependencies array,
+    then callback fn will get executed every time a 
+    state changes
+ii. if there is an empty array, 
+    then callback fn will get executed only once
+iii. if there are values inside dependencies array,
+    then callback fn will get executed everytime its dependencies state updated
+
+useEffect mainly used for API calls
+  API(Application Programming Interface):
+
+
+
+
+
+
+
+
+
+
+

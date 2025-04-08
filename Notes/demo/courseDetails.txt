@@ -1,0 +1,21 @@
+REACT JS:
+        ---> HTML,CSS, JS
+why react js is needed?
+   react js is needed for front end applications/websites.
+course duration: 2 months(50 sessions)
+timings: 9.05-9.10  -- 10.45-10.50
+course syllabus:
+       JS essentials
+       react js intro
+       components (JSX)
+       props
+       hooks
+       life cycle methods
+       forms
+       routings
+       libraries
+       5-10 mini projects
+       1 open source project
+git & github, netlify, tailwind
+
+

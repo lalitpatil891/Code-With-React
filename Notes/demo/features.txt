@@ -1,0 +1,95 @@
+React features:  
+   i. JSX: JSX(Javascript XML) is a syntactical extension for javascript that allows to  write HTML like code in your Javascript. It is the key feature in React and it is used to create components
+   i. JSX must return only one HTML element or All HTML in jsx must have single parent element. To avoid multiple elements error, we can wrap all elements into one single parent element
+  --> we can use containers like div,section,main etc..,
+  --> React suggests a transparent container called fragment. it is written with empty open and close tags
+ --> jsx attributes are similar to html attributes with different names eg: className will be used instead of class. it will use camelCase
+ --> jsx expressions can be dynamic using braces or In jsx html, we can include js using braces.
+
+Task: Write a component Sum which will print sum of two values which are declared as variables
+
+ii. components: 
+      component is the building block of react js.Whole layout of web page is divided into smaller reusable parts and each reusable part is called component.
+   A component contains a Javascript function or class that returns JSX elements. it can receive props(properties) from their parent component.
+Main Advantages of components are Reusability, modularity and compatability.
+
+one component can be wrapped inside another component called nested components
+  <x>
+     <y/>
+  </x>
+x is called parent component and y is called child component
+
+Props: Parent component can send values to the child component called props(properties)
+   parent component mentions the props in the component declaration 
+  child component receives them as props object
+ //Parent.jsx
+     <child title="good" />
+//Child.jsx
+     function Child(props)
+    {
+       return (
+             <h2>{{props.title}}</h2>
+       )
+     }
+
+Props object can be destructured in the child component 
+like
+ function Child({title})
+    {
+       return (
+             <h2>{{title}}</h2>
+       )
+     }
+
+Child component can also send values to parent component by reciving a function from parent component and passing values to that function
+<Child fun={functionName} />
+
+<button onClick={()=>functionName(values)}>click me</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

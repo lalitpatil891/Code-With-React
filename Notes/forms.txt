@@ -1,1 +1,194 @@
-Formik and React-hook-form are the libraries which are used form handling. Formik usually handles like controlled compo
+Forms in react:
+  forms are used to collect user's data by inputs. React handles the forms more efficiently than html forms. React handles the forms using useState or useRef
+  i. useState in forms:
+     React controls the form inputs using useState.useState hook stores the value and also updates using state method
+
+     Components which have forms using useState are called 
+     controlled Components since the control is with useState
+
+     Every input has a value and onChange handler.
+
+     It is best recommanded and used for form validation and submission
+
+     eg: import React from 'react'
+import { useState } from 'react'
+function Controlled ()
+{
+    const [formData, setFormData] = useState({
+        name:'',email:'',password:''
+    })
+    const handleChange = (e) =>
+    {
+        setFormData({ ...formData, [e.target.name]: e.target.value })
+        console.log(formData)
+    }
+    function handleSubmit (e)
+    {
+       e.preventDefault()
+        console.log("name: " + formData.name)
+        console.log("email: " + formData.email)
+        console.log("password: " + formData.password)
+        setFormData({
+        name:'',email:'',password:''
+    })
+    }
+  return (
+      <form onSubmit={handleSubmit}>
+          <input type="text" placeholder='Enter the name' value={formData.name}
+            name='name'  onChange={handleChange} /> 
+          <input type="email" placeholder='Enter email' value={formData.email}
+            name='email'  onChange={handleChange} />
+          <input type="password" placeholder='Enter the password'
+              name='password' value={formData.password}
+              onChange={handleChange} />
+          <button>submit</button>
+    </form>
+  )
+}
+
+export default Controlled
+
+
+forms using useRef:
+   --- useRef is a hook which is used for DOM manipulations and ref referes to reference
+   --- In controlled Components, useState rerenders everytime state change, we can use useRef  to access input / form elements without re-rerenders
+   --- useRef cannot stores the values like in useState but it can access only the current values using DOM
+
+
+import React from 'react'
+import { useRef } from 'react'
+function Uncontrolled ()
+{
+    const bujji = useRef(null)
+    const em = useRef(null)
+    const box= useRef(null)
+    const handleSubmit = (e) =>
+    {
+        e.preventDefault()
+        console.log(bujji.current.value) 
+        console.log(em.current.value) 
+
+    }
+  return (
+      <>
+          <div ref={box} style={{ height: '100px', width: '100px', background: 'red' }}></div>
+          <button onClick={()=>box.current.style.transform=' translateX(300px)'}>rotate</button>
+			<form onSubmit={handleSubmit}>
+				<input
+					type='text'
+					ref={bujji}
+					placeholder='Enter name'
+				/>
+				<input
+					type='email'
+					ref={em}
+					placeholder='Enter email'
+				/>
+				<input
+					type='password'
+					placeholder='Enter password'
+				/>
+				<button>Submit</button>
+			</form>
+		</>
+	)
+}
+
+export default Uncontrolled
+
+useRef need to be used minimal
+
+form Validations:
+We can validate a form in react in multiple ways like
+  i. using useState:
+  import React from 'react'
+import { useState } from 'react'
+function App ()
+{
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    password:''
+  })
+  const [errors,setErrors]=useState({})
+  const handleChange = (e) =>
+  {
+    setFormData({...formData,[e.target.name]:e.target.value})
+  }
+  const handleSubmit = (e) =>
+  {
+    e.preventDefault();
+    let newErrors = {};
+    if (formData.name.trim() == "")
+    {
+      newErrors.name="Name is required"
+    }
+    if (formData.email.trim() == '')
+    {
+      newErrors.email="Email is required"
+    }
+    if (formData.password.trim() == "") {
+			newErrors.password = "password is required"
+    }
+    if (formData.password.trim().length <= 6)
+    {
+      newErrors.minPassword="Enter minimum 6 password characters"
+    }
+    setErrors(newErrors)
+  }
+  return (
+		<div className=' min-h-screen bg-amber-200 flex justify-center items-center'>
+			<form
+				className=' p-5 rounded-3xl bg-white shadow-blue-300 
+      flex flex-col gap-4'
+				onSubmit={handleSubmit}>
+				<input
+					type='text'
+					name='name'
+					value={formData.name}
+					onChange={handleChange}
+					placeholder='Enter name'
+					className=' h-20 w-100 border  border-black rounded-2xl focus:border-blue-300'
+				/>
+				<p className=' text-red-500'> {errors.name}</p>
+				<input
+					type='email'
+					name='email'
+					value={formData.email}
+					onChange={handleChange}
+					placeholder='Enter email'
+					className=' h-20 w-100 border border-black rounded-2xl focus:border-blue-300'
+				/>
+				<p className=' text-red-500'>{errors.email}</p>
+				<input
+					type='password'
+					name='password'
+					value={formData.password}
+					placeholder='Enter password'
+					onChange={handleChange}
+					className=' h-20 w-100 border  border-black rounded-2xl focus:border-blue-300'
+				/>
+				<p className=' text-red-500'>{errors.password}</p>
+				<p className=' text-red-500'>{errors.minPassword}</p>
+				<button className=' p-3 rounded-2xl text-2xl bg-black text-white'>
+					submit
+				</button>
+			</form>
+		</div>
+	)
+}
+
+export default App
+
+  ii. regex: regex means regular expressions, they are used to test different patterns. each symbol in a regular expressions means a pattern. usually regular expressions starts with ^ and ends with $
+  iii. using useEffect
+  iv. using libraries such as Yup,formik,react-hook-form,zod etc..,
+
+
+
+
+
+
+
+
+

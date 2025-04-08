@@ -1,0 +1,55 @@
+State:  In React state refers to the data that changes within a component. state is an object that stores the component's dynamic data. it's used to render the component
+
+ A state will have initial state, update state method, modified state.
+
+ state and props both are used to store the data in react components  but state stores
+dynamic data that changes within a component and props passes the data from a parent component to child component
+
+ we can mention/use state using a hook called
+"useState" in functional components.
+syntax:
+   import {useState} from 'react'
+
+   const [stateValue,stateUpdateMethod] = useState(initial value)
+
+Virtual DOM:
+    The Virtual DOM is a lighweight in-memory representation of the real DOM. It is a key feature in react that enables the efficient fast rendering of components.
+  
+How it works?
+  i. when a component is rendered , react creates a virtual DOM representation of component tree
+  ii. when the state of component changes, react updates the virtual DOM with the previous One. This process is called 'Diffing'
+ iii. react generates a patch that describes the changes between two virtual DOM's
+ iv. react applies that patch to the real DOM so that only changes will be updated , not the whole component.
+
+
+Basic react features such as JSX, components,props,state will help us to create simple react applications
+   --> React application uses a bundler called vite or create-react-app
+   --> vite uses HMR(Hot Module Reloading and create-react-app uses local build
+  --> vite uses its own web pack and create-react-app don't have default web pack
+  --> vite and create-react-app uses babel as a transpiler
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+

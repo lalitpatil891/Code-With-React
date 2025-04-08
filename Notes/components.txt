@@ -1,0 +1,52 @@
+Components are the building blocks of React. UI is divided into logical reusable parts called components.
+  There are two types of components available in React
+  i. functional component
+  ii. class component
+
+  functional components are defined as functions and do not have their own state. For state, they need to import 'useState' hook. In olden times, these components also called stateless components
+  syntax: 
+    function Component-name(){
+        return (
+            //HTML code
+        )
+    }
+ 
+  class components are defined as classes which uses 'render' method to return JSX code and these components have state by default.
+    class Component-name extends Component{
+        render(){
+            return (
+                //HTML code
+            )
+        }
+    }
+
+ Components render each time a state value changes. Like Human have different phases of life, components also goes to different phase of its life cycle.
+
+ Basically, we can divide life cycle methods into 4 categories
+   i. inital stage : In this stage constructor method will be called automatically
+   ii. mounting stage : mounting is the starting (first render ) stage of a component
+      a. getDerivedStateFromProps(): This method will be called right after constructor and it is used to take state values from the props
+      b. render(): The render method is called after getDerivedStateFromProps. it returns JSX that makes the view of component.
+      c. componentDidMount(): This method is called after the render and it is used for any initial setup
+   iii. update stage : 
+    a. getDerivedStateFromProps(): This method will be called right after any change and it is used to take state values from the props
+    b. shouldCoponentUpdate(): This component ensures whether okay to update the component or not 
+    c. render(): The render method is called after shouldCoponentUpdate. it returns JSX that makes the view of component.
+    d. componentDidUpdate(): This method is called after the render and it is used for any every update
+   iv. unmounting stage:
+   a. componentDidUnmount(): This method is called at end of component life cycle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

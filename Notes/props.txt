@@ -1,0 +1,76 @@
+Props:
+   Props are used to send the data between parent component to child component. it is a short form of properties. props are always passed as a object 'props'
+   eg: function App(){
+    return(
+        <>
+          <MyComponent  title="raj" />
+        </>
+    )
+   }
+   In above example App  component contains MyComponent so App is called parent component and MyComponent is called Child Component.
+   Parent component sending a prop 'title' with value 'raj' to child component and child components receives as follows
+   function MyComponent(props){
+    return (
+        <>
+          <p>{props.title}</>
+        </>
+    )
+   }
+  we can also destructure the props object so that we can each prop separately
+  function MyComponent({title}){
+    return (
+        <>
+          <p>{title}</>
+        </>
+    )
+   }
+  
+  props are readonly. The child component cannot modify the props it receives
+  we can even declare some default values to the Props so that if parent misses to pass such values then default values will be used
+  eg: function MyComponent({title="shekhar"}){
+    return (
+        <>
+          <p>{title}</p>
+        </>
+    )
+   }
+   we can even pass function and state values also as props
+   child component to parent component:
+      Parent component creates a function and pass it as a prop to child component and child component calls that function and may pass parameters to it . parent component receives the values from it
+      //Parent component
+        function display(n){
+          console.log("my name is "+n)
+        }
+        <MyComponent fun={display} />
+      //Child Component
+        {fun("prasad")}
+
+  Prop Drilling:
+     Imagine there is a situation of multi level nested components existed and outermost component have to pass values to inner most component then it needs to pass through multiple middle level components even though they are not using that props
+      This situation is called prop Drilling
+
+    we can solve the prop drilling by context API. In this solution, we will create a global container and outermost component pass the value to global container and inner most component access it and takes the value
+
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+

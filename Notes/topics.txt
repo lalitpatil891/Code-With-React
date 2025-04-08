@@ -1,0 +1,29 @@
+Intro
+basics of jsx,components,props,state
+components
+  -- functional
+  -- class
+  -- life cycle methods
+props
+  -- basic props(parent to child)
+  -- default props
+  -- child to parent
+  -- prop drilling
+state
+  -- useState
+  -- multiple states
+  --event object
+useEffect 
+  -- without array, with  empty array, dependencies
+  -- fetch
+Context API
+  --  prop drilling,
+  -- createContext, Provider, useContext
+Routing
+   -- BrowserRouter,Link,Routes,Routes
+   --nested route, useNavigate
+   -- lazy loading, 404 page
+forms
+hooks
+redux
+final project

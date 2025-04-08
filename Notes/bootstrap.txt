@@ -1,0 +1,213 @@
+Bootstrap is a CSS component Library which is used for UI responsive purposes. Library is prewritten code used for specific purpose.
+
+we can install any library by command "npm install library-name"
+eg: npm install Bootstrap
+
+goto index.css --> write
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+
+extension: intellisense for css class names by zignd
+
+# Bootstrap Framework Notes
+
+## Table of Contents
+- [Colors](#colors)
+- [Basic Properties](#basic-properties)
+- [Layout System](#layout-system)
+- [Breakpoints](#breakpoints)
+
+## Colors
+
+### Default Bootstrap Colors
+- `primary`: #0d6efd (Blue)
+- `secondary`: #6c757d (Gray)
+- `success`: #198754 (Green)
+- `danger`: #dc3545 (Red)
+- `warning`: #ffc107 (Yellow)
+- `info`: #0dcaf0 (Cyan)
+- `light`: #f8f9fa (Light gray)
+- `dark`: #212529 (Dark gray)
+
+Usage examples:
+```html
+<button class="btn btn-primary">Primary Button</button>
+<div class="text-danger">Error message</div>
+<div class="bg-success">Success background</div>
+```
+
+## Basic Properties
+
+### Typography
+- Default font: Native font stack
+- Base font size: 16px (1rem)
+- Heading sizes:
+  - h1: 2.5rem
+  - h2: 2rem
+  - h3: 1.75rem
+  - h4: 1.5rem
+  - h5: 1.25rem
+  - h6: 1rem
+
+### Spacing
+Bootstrap uses a spacing scale with these values:
+- 0 - 0
+- 1 - 0.25rem (4px)
+- 2 - 0.5rem (8px)
+- 3 - 1rem (16px)
+- 4 - 1.5rem (24px)
+- 5 - 3rem (48px)
+
+Usage:
+```html
+<div class="m-3">Margin all sides</div>
+<div class="p-4">Padding all sides</div>
+<div class="mt-2">Margin top</div>
+```
+
+### Common Components
+1. Buttons:
+```html
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+```
+
+2. Cards:
+```html
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Card content</p>
+  </div>
+</div>
+```
+
+3. Alerts:
+```html
+<div class="alert alert-success">Success message</div>
+<div class="alert alert-danger">Error message</div>
+```
+
+## Layout System
+
+### Grid System
+Bootstrap uses a 12-column grid system:
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-6">50% width</div>
+    <div class="col-6">50% width</div>
+  </div>
+</div>
+```
+
+### Column Classes
+- `col` - equal width columns
+- `col-{number}` - specific column width (1-12)
+- `col-{breakpoint}-{number}` - responsive column width
+
+Examples:
+```html
+<div class="row">
+  <div class="col">Auto width</div>
+  <div class="col-6">50% width</div>
+  <div class="col">Auto width</div>
+</div>
+```
+
+### Container Types
+1. Fixed-width containers:
+```html
+<div class="container">
+  <!-- Fixed max-width at each breakpoint -->
+</div>
+```
+
+2. Fluid containers:
+```html
+<div class="container-fluid">
+  <!-- 100% width at all breakpoints -->
+</div>
+```
+
+## Breakpoints
+
+### Default Bootstrap Breakpoints
+| Breakpoint | Class infix | Dimensions |
+|------------|-------------|------------|
+| Extra small | None | <576px |
+| Small | sm | ≥576px |
+| Medium | md | ≥768px |
+| Large | lg | ≥992px |
+| Extra large | xl | ≥1200px |
+| Extra extra large | xxl | ≥1400px |
+
+### Responsive Classes
+```html
+<!-- Stack on mobile, side by side on desktop -->
+<div class="row">
+  <div class="col-12 col-md-6">
+    Full width on mobile, half width on md and up
+  </div>
+  <div class="col-12 col-md-6">
+    Full width on mobile, half width on md and up
+  </div>
+</div>
+```
+
+### Responsive Utilities
+- Display utilities:
+```html
+<div class="d-none d-md-block">
+  <!-- Hidden on mobile, visible on medium and up -->
+</div>
+```
+
+- Responsive text alignment:
+```html
+<p class="text-start text-md-center">
+  <!-- Left aligned on mobile, centered on medium and up -->
+</p>
+```
+
+### Best Practices
+1. Always start with mobile-first design
+2. Use appropriate breakpoints for your content
+3. Test thoroughly across different screen sizes
+4. Utilize Bootstrap's built-in responsive classes
+5. Consider using flex utilities for complex layouts
+
+## Additional Tips
+
+### Flex Utilities
+Bootstrap provides extensive flex utilities:
+```html
+<div class="d-flex justify-content-between align-items-center">
+  <!-- Flex container with space-between and centered items -->
+</div>
+```
+
+### Margin and Padding
+Direction utilities:
+- `m-*`: margin
+- `p-*`: padding
+- `t-*`: top
+- `b-*`: bottom
+- `s-*`: start (left)
+- `e-*`: end (right)
+- `x-*`: horizontal (left and right)
+- `y-*`: vertical (top and bottom)
+
+Example:
+```html
+<div class="mx-auto py-3">
+  <!-- Auto horizontal margin and padding top/bottom -->
+</div>
+```
+
+### Responsive Images
+```html
+<img src="..." class="img-fluid" alt="Responsive image">
+```
+
+Remember that Bootstrap is mobile-first, so always design and plan your layouts starting with the smallest screen size first and then scale up using the appropriate breakpoints.

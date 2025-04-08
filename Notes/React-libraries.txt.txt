@@ -1,0 +1,27 @@
+react-libraries
+----------------
+
+react-router-dom -- it provides routing to react applications
+
+Redux or Redux Toolkit -- it provides state management to react applications
+
+Formik, React-hook-form -- They deal with inputs in React Forms 
+
+Yup,Zop -- Thye provide validations in React Forms
+
+Bootstrap -- commponent CSS library
+
+Tailwind -- Utility based CSS Library (it provides class
+
+react-typed -- Typing animations
+
+GSAP -- animations
+
+anime js -- animations
+
+react fiber three -- 3D praphic
+
+framer-motion -- animations
+
+swiper JS -- sliders
+

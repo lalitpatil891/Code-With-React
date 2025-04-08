@@ -1,0 +1,26 @@
+
+hooks
+=====
+Hooks are the fuctions which have naming convention that starts with "use" in camelCase like useState, useEffect functions may not return values but hooks must return values.
+react 16 introduced hooks to overcome life cycle methods in class components
+
+Most popular and important hooks are:
+
+i. useState: useState is hook used for state management which returns a value and a functions to update the value and render the components
+eg: cost [value, setValue] = useState(initial value)
+
+ii. useEffect: useEffect is a hook used as a replacement of componentDidMount and ComponentDidUpdate  life cycle methods. it will accept two values i.e., a fuction and dependencies array
+-->if no dependencies array, then function executes on every state change of component
+
+-->if only empty dependencies arry, then function executes only one Time like only componentDidMount
+
+--> if some values present in dependencies array, then function executes on every state change of those values
+	eg: useEffects(callback fn, [dependecies array])
+iii. useContext : useContext is a hook used to take the values from the global context Provider and return those values
+Eg: const {value} = useContent(contextName)
+
+iv. useRef : useRef is used for DOM manipulations and Dealing with inputs const value = useRef();
+<p ref={value}> hello</p>
+
+v. useCallBack : 
+  -> It is used for caching the callback functions. it caches functions to prevent unnecessary re renders
